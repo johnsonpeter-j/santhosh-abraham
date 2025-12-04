@@ -17,11 +17,23 @@ export function About({ summary }: AboutProps) {
                     transition={{ duration: 0.5 }}
                     className="max-w-3xl mx-auto text-center"
                 >
-                    <h2 className="text-3xl font-bold mb-8">About Me</h2>
-                    <p className="text-lg text-muted-foreground leading-relaxed">
+                    <motion.h2
+                        className="text-3xl font-bold mb-8"
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ duration: 0.3 }}
+                    >
+                        About Me
+                    </motion.h2>
+                    <motion.p
+                        className="text-lg text-muted-foreground leading-relaxed"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.2, duration: 0.5 }}
+                    >
                         {summary ||
                             "I am a dedicated Business Analyst with a strong background in data analytics, marketing strategies, and technical implementation. My passion lies in bridging the gap between business requirements and technical solutions to drive operational efficiency and growth."}
-                    </p>
+                    </motion.p>
                 </motion.div>
             </div>
         </section>

@@ -45,20 +45,21 @@ export function Navbar() {
             )}
         >
             <div className="container mx-auto px-6 flex items-center justify-between">
-                <Link href="/" className="text-2xl font-bold tracking-tighter">
-                    Santhosh<span className="text-primary">.</span>
+                <Link href="/" className="text-2xl font-bold tracking-tighter group">
+                    Santhosh<span className="text-primary group-hover:animate-pulse">.</span>
                 </Link>
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-center gap-8">
-                    {navLinks.map((link) => (
+                    {navLinks.map((link, index) => (
                         <Link
                             key={link.name}
                             href={link.href}
                             onClick={(e) => handleScroll(e, link.href)}
-                            className="text-sm font-medium hover:text-primary transition-colors"
+                            className="relative text-sm font-medium hover:text-primary transition-colors group"
                         >
                             {link.name}
+                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
                         </Link>
                     ))}
                     <ModeToggle />

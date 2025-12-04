@@ -14,14 +14,14 @@ export function SkillsSection({ skills }: SkillsProps) {
         show: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.1,
+                staggerChildren: 0.05,
             },
         },
     };
 
     const item = {
-        hidden: { opacity: 0, y: 20 },
-        show: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 20, scale: 0.8 },
+        show: { opacity: 1, y: 0, scale: 1 },
     };
 
     return (
@@ -47,12 +47,17 @@ export function SkillsSection({ skills }: SkillsProps) {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
-                        className="bg-card border border-border rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow"
+                        whileHover={{ scale: 1.02 }}
+                        className="bg-card border border-border rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300"
                     >
                         <div className="flex items-center gap-3 mb-8">
-                            <div className="p-3 bg-primary/10 rounded-lg text-primary">
+                            <motion.div
+                                className="p-3 bg-primary/10 rounded-lg text-primary"
+                                whileHover={{ rotate: 360 }}
+                                transition={{ duration: 0.5 }}
+                            >
                                 <Cpu className="w-6 h-6" />
-                            </div>
+                            </motion.div>
                             <h3 className="text-2xl font-bold">Hard Skills</h3>
                         </div>
 
@@ -67,7 +72,13 @@ export function SkillsSection({ skills }: SkillsProps) {
                                 <motion.span
                                     key={index}
                                     variants={item}
-                                    className="bg-background border border-border px-4 py-2 rounded-lg text-sm font-medium hover:border-primary hover:text-primary transition-colors cursor-default shadow-sm"
+                                    whileHover={{
+                                        scale: 1.1,
+                                        y: -5,
+                                        transition: { duration: 0.2 }
+                                    }}
+                                    whileTap={{ scale: 0.95 }}
+                                    className="bg-background border border-border px-4 py-2 rounded-lg text-sm font-medium hover:border-primary hover:text-primary hover:shadow-lg transition-all cursor-default"
                                 >
                                     {skill}
                                 </motion.span>
@@ -81,12 +92,17 @@ export function SkillsSection({ skills }: SkillsProps) {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.2 }}
-                        className="bg-card border border-border rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow"
+                        whileHover={{ scale: 1.02 }}
+                        className="bg-card border border-border rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300"
                     >
                         <div className="flex items-center gap-3 mb-8">
-                            <div className="p-3 bg-secondary rounded-lg text-secondary-foreground">
+                            <motion.div
+                                className="p-3 bg-secondary rounded-lg text-secondary-foreground"
+                                whileHover={{ rotate: 360 }}
+                                transition={{ duration: 0.5 }}
+                            >
                                 <Users className="w-6 h-6" />
-                            </div>
+                            </motion.div>
                             <h3 className="text-2xl font-bold">Soft Skills</h3>
                         </div>
 
@@ -101,7 +117,13 @@ export function SkillsSection({ skills }: SkillsProps) {
                                 <motion.span
                                     key={index}
                                     variants={item}
-                                    className="bg-secondary/50 text-secondary-foreground border border-transparent px-4 py-2 rounded-lg text-sm font-medium hover:bg-secondary transition-colors cursor-default"
+                                    whileHover={{
+                                        scale: 1.1,
+                                        y: -5,
+                                        transition: { duration: 0.2 }
+                                    }}
+                                    whileTap={{ scale: 0.95 }}
+                                    className="bg-secondary/50 text-secondary-foreground border border-transparent px-4 py-2 rounded-lg text-sm font-medium hover:bg-secondary hover:shadow-lg transition-all cursor-default"
                                 >
                                     {skill}
                                 </motion.span>
