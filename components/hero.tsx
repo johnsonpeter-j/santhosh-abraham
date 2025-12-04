@@ -55,7 +55,7 @@ export function Hero({ personalInfo }: HeroProps) {
                     <div className="aspect-square rounded-full bg-gradient-to-tr from-primary/20 to-secondary/20 blur-3xl absolute inset-0 -z-10" />
                     <div className="w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full flex items-center justify-center border-4 border-background shadow-2xl overflow-hidden relative">
                         <Image
-                            src="/profile-v2.png"
+                            src="/san_photo.png"
                             alt={personalInfo.name}
                             fill
                             className="object-cover"
