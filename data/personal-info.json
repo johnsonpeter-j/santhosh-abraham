@@ -1,0 +1,136 @@
+{
+    "personalInfo": {
+        "name": "Santhosh A",
+        "title": "PGDM",
+        "contact": {
+            "email": "Santhosh07.work@gmail.com",
+            "phone": "6380504411"
+        }
+    },
+    "summary": "",
+    "experience": [
+        {
+            "company": "Swiggy",
+            "role": "Sales and Marketing",
+            "dates": "Apr – Jul 2025",
+            "description": [
+                "Onboarded multiple restaurants across Chennai.",
+                "Led pilot onboarding of non-traditional outlets (batter shops, hot chips stores, paan vendors).",
+                "Conducted parity analysis on visibility, delivery fee structures, and discount schemes."
+            ]
+        },
+        {
+            "company": "Sierra Digital",
+            "role": "SAP ABAP Consultant Trainee",
+            "dates": "Dec 2022 – May 2023",
+            "description": [
+                "Explored SAP and ERP concepts.",
+                "Gained entry-level knowledge in ABAP DDIC, reporting, OOABAP.",
+                "Assisted seniors with ALV reports and functional modules.",
+                "Worked as a foundational ABAP consultant."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Thiagarajar School of Management",
+            "year": 2026,
+            "degree": "PGDM",
+            "score": "7.36"
+        },
+        {
+            "institution": "Karunya Institute of Technology and Sciences",
+            "year": 2023,
+            "degree": "B.Tech (Computer Science and Engineering)",
+            "score": "7.51"
+        },
+        {
+            "institution": "P A Vidya Bhavan Higher Secondary School",
+            "year": 2018,
+            "qualification": "HSC",
+            "score": "80%"
+        },
+        {
+            "institution": "P A Vidya Bhavan Higher Secondary School",
+            "year": 2016,
+            "qualification": "SSLC",
+            "score": "98%"
+        }
+    ],
+    "projects": [
+        {
+            "title": "Funnel Leakage and Operational Drivers in Tier-3 Restaurants",
+            "year": 2025,
+            "domain": "Marketing and Analytics",
+            "description": "Analyzed Swiggy’s Tier-3 funnel leakage using regression and clustering and recommended marketing solutions."
+        },
+        {
+            "title": "FOS GRIE – International Conference Website",
+            "year": 2025,
+            "domain": "Marketing",
+            "description": "Designed the conference website for visibility, submissions, registrations, and communication workflows.",
+            "link": "https://fos.tsm.ac.in/"
+        },
+        {
+            "title": "Nella - Sudar Oil",
+            "year": 2024,
+            "domain": "Sales",
+            "description": "Managed a high-volume festival stall selling ~100 bottles of Sudar Deepam oil."
+        },
+        {
+            "title": "SAP ABAP DDIC and Reporting",
+            "year": "2022–2023",
+            "domain": "SAP ABAP",
+            "description": "Developed ALV/classical reports and maintained DDIC objects; collaborated with Fiori team."
+        },
+        {
+            "title": "Inpatient Fall Risk Prediction and Cross-site Validation",
+            "year": 2022,
+            "domain": "Machine Learning",
+            "description": "Researched ML approaches for predicting inpatient fall risk with cross-site validation."
+        },
+        {
+            "title": "Web Application for a Clothes Store",
+            "year": 2021,
+            "domain": "Web Development",
+            "description": "Designed an online storefront with email integration for customer engagement."
+        },
+        {
+            "title": "Blind Man Walking Stick",
+            "year": 2019,
+            "domain": "Embedded Systems",
+            "description": "Developed an Arduino-based ultrasonic walking stick for obstacle detection."
+        }
+    ],
+    "leadership": [
+        "CCM of Admission Cell",
+        "CCM of R Space",
+        "CCM of Zero Gravity"
+    ],
+    "certifications": [
+        "Introduction to Python – Karunya Hacks",
+        "Introduction to Data Science – IBM",
+        "Basic Data Descriptors & Statistical Distributions",
+        "Business English Certificate Preliminary – Cambridge University"
+    ],
+    "skills": {
+        "hardSkills": [
+            "Python",
+            "SAP ABAP",
+            "HTML/CSS (Basics)",
+            "SQL",
+            "Excel",
+            "Power BI",
+            "Multivariate Analysis"
+        ],
+        "softSkills": [
+            "Initiative & Self-Motivation",
+            "Adaptability & Learning Agility",
+            "Time Management & Multitasking"
+        ]
+    },
+    "interests": [
+        "Sketching",
+        "Photography"
+    ]
+}
