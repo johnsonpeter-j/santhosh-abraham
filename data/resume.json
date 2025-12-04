@@ -1,10 +1,12 @@
 {
     "personalInfo": {
         "name": "Santhosh A",
-        "title": "PGDM",
+        "title": "PGDM | Business Analyst & Data Enthusiast",
         "contact": {
             "email": "Santhosh07.work@gmail.com",
-            "phone": "6380504411"
+            "phone": "6380504411",
+            "linkedin": "https://www.linkedin.com/in/santhosh-a-442a01193",
+            "github": "https://github.com/santhosh-a-luffy"
         }
     },
     "summary": "",
